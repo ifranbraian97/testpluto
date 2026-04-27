@@ -3,56 +3,7 @@
   "devCommand": "pnpm run dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_SUPABASE_URL",
-      "description": "Supabase URL for public access"
-    },
-    {
-      "key": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
-      "description": "Supabase anonymous key for public access"
-    },
-    {
-      "key": "SUPABASE_SERVICE_ROLE_KEY",
-      "description": "Supabase service role key for server-side operations"
-    },
-    {
-      "key": "SMTP_HOST",
-      "description": "SMTP server hostname for email sending"
-    },
-    {
-      "key": "SMTP_PORT",
-      "description": "SMTP server port"
-    },
-    {
-      "key": "SMTP_USER",
-      "description": "SMTP authentication username"
-    },
-    {
-      "key": "SMTP_PASSWORD",
-      "description": "SMTP authentication password"
-    },
-    {
-      "key": "SMTP_FROM",
-      "description": "Default from email address"
-    },
-    {
-      "key": "AWS_ACCESS_KEY_ID",
-      "description": "AWS access key for S3"
-    },
-    {
-      "key": "AWS_SECRET_ACCESS_KEY",
-      "description": "AWS secret access key for S3"
-    },
-    {
-      "key": "AWS_REGION",
-      "description": "AWS region for S3"
-    },
-    {
-      "key": "AWS_S3_BUCKET",
-      "description": "AWS S3 bucket name"
-    }
-  ],
+  
   "headers": [
     {
       "source": "/api/(.*)",
