@@ -3,15 +3,15 @@
 import { cookies } from "next/headers"
 import { createHmac } from "crypto"
 
-// Simple credentials for demo (in production, use Supabase Auth or proper auth system)
+// Simple credentials for demo (in production, use Supabase Auth or proper auth system )
 // Change these credentials to your desired admin credentials
-const ADMIN_EMAIL = "plutotec@admin.com"
-const ADMIN_PASSWORD = "Plut0tec@2026$ecure!" // Change this to a secure password
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 interface LoginResult {
-  success: boolean
-  error?: string
-  token?: string
+  success: boolean;
+  error?: string;
+  token?: string; // Asegurate de que el cliente use esto solo si success es true
 }
 
 export async function login(email: string, password: string): Promise<LoginResult> {
